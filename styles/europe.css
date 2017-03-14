@@ -1,0 +1,228 @@
+header {
+	text-align: right;
+}
+div.w3-content {
+    margin-left: 27em;
+  margin-right: 30em;
+  align-items: center;
+  width:30em;
+ }
+ ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: LightGray;
+}
+ul.topnav li {float: right}
+ul.topnav li a {
+    display: inline-block;
+    color: DimGray;
+    text-align: center;
+    font-family: Verdana;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000);    
+}
+ul.topnav li a:hover {background-color: Salmon;}
+ul {
+	padding: 10px;
+}
+li {display: inline;
+	padding: 0px 20px 0px 20px;
+}
+a {
+	color: gray;
+	font-family: Verdana;
+	font-size: 1em;
+}
+}
+article {
+	max-width: 1000px;
+	padding: 10px;
+	text-align: block;
+	margin: 0 auto;
+}
+ul.topnav li a:hover {background-color: Salmon;}
+@media (max-width: 500px) {
+	h1 {
+		font-size: 36px;
+	}
+	li {
+		display: block;
+		padding: 5px;
+	}
+}
+}
+.imglink
+{
+   background-color:blue; 
+}
+.imglink:hover
+{
+    background-color:white;
+ }
+
+.imglink:hover .img-responsive
+{
+    opacity:0.4;
+
+}
+ ul.rig {
+  list-style: none;
+  font-size: 0px;
+}
+ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ul.rig li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 20px;
+}
+ul.rig li h3 {
+  margin: 0 0 5px;
+}
+ul.rig li p {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999;
+}
+ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2.5%; 
+}
+ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 2.5% 2.5%;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-size: 1rem;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ul.rig.columns-2 li {
+  width: 47.5%; 
+}
+@media (max-width: 480px) {
+  ul.grid-nav li {
+    display: block;
+    margin: 0 0 5px;
+  }
+  ul.grid-nav li a {
+    display: block;
+  }
+  ul.rig {
+    margin-left: 0;
+  }
+  ul.rig li {
+    width: 100% !important;
+    margin: 0 0 20px;
+  }
+}
+h1 {
+  text-align: center; 
+  font-family: Papyrus, Arial;
+  font-weight: 900;
+  color: Salmon;
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.01em;
+  margin-top: 1em;
+  }
+h2 {
+  text-align: center;
+  font-family: Verdana;
+  color: gray;
+  font-size: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: 600;
+  text-orientation: block 
+  }
+h3 {
+  text-align: center;
+  font-family: Verdana;
+  color: gray;
+  font-size: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: 600;
+  text-orientation: block 
+  }
+h4 {
+  text-align: center;
+  font-family: Verdana;
+  color: gray;
+  font-size: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: 600;
+  text-orientation: block 
+  }
+p {
+  text-align: center;
+  font-family: Verdana;
+  color: gray;
+  font-size: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: 600;
+  text-orientation: block 
+  }
+  .brand{
+    color: salmon;
+    font-family: Papyrus, Arial;
+    padding: auto;
+  }
+  blockquote { 
+  text-align: center;
+  font-family: Verdana;
+  color: gray;
+  font-size: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-weight: 600;
+  }
+}
