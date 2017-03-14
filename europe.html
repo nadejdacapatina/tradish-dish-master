@@ -3,14 +3,20 @@
 <head>
    <title>tradish-dish</title>
    <link rel="stylesheet" type="text/css" href="styles/europe.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
 </head>
 <body>
  <header>
-  <ul>
-    <li><a href="index.html">home</a></li>
-    <li><a href="about.html">about</a></li>
-    <li><a href="blog.html">blog</a></li>
+  <header>
+  <ul class="topnav" id="myTopnav">
     <li><a href="contact.html">contact</a></li>
+    <li><a href="blog.html">blog</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="index.html">home</a></li>
+    <a href="javascript:void(0)"></a></li>
+  </ul>
   </ul>
  </header>
  <article/>
@@ -19,30 +25,59 @@
  <article>
   <h2>Rich and savory like a German sauerbraten or light and bursting of flavors like a Greek salad: Europe's cuisine is incredibly versatile. We hope you are hungry as you embark on your Euro-trip! </h2>
  </article>
+ <div class="w3-content w3-section" style="max-width:900px">
+  <img class="mySlides w3-animate-fading" src="images/duesseldorf.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/ireland.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/frankfurt.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/seville.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/ireland02.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/switzerland.jpg" style="width:100%">
+ </div>
+ <script>
+var myIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+<hr size="3" />
  <ul class="rig columns-2">
   <li>
-    <img src="images/alex.jpg" />
+    <a href="alex-recipe.html" class="imglink"><img src="images/alex.jpg" class="img-responsive"/></a>
     <h3>Waltrop, Germany</h3>
     <p>Living in a foreign country far away from my family, has its ups and downs. As much I love travelling and exploring the world, there are always times when I miss home. And there is no better remedy for these moments than my Mama’s scrumptious lentil soup. It’s a simple dish, really. But there is something about it that fills my belly with love and makes me feel at ease.</p>
   </li>
   <li>
-    <img src="images/charlotte.jpg" />
+    <a href="charlotte-recipe.html" class="imglink"><img src="images/charlotte.jpg" class="img-responsive"/></a>
     <h3>Hamburg, Germany</h3>
     <p>Tafelspitz - very traditional and delicious! My nan used to cook it for the family and guests. Especially when it is cold outside and you are sitting in the living room with everyone. It warms you up and it is a very healthy dish with all those vegetables and the dark meat. I would not cook it only for myself, but if you are a big group - I would call it a perfect dish.</p>
   </li>
   <li>
-    <img src="images/ani.jpg" />
+    <a href="ani-recipe.html" class="imglink"><img src="images/ani.jpg" class="img-responsive"/></a>
     <h3>Moscow, Russia</h3>
     <p>My favorite dish from the Russian cuisine is called "Herring under a fur coat". It looks as strange as it  sounds but it tastes delicious. It's strange purplish color comes from one of its components - beetroot. Basically it is a salad made with multiple layers of all the ingredients that Russians love in their cold salads - potatoes, carrots, eggs and mayonnaise. But the main ingredient which gives the salad its name is herring. We usually cook it in winter and typically for New Year's dinner.
-    <blockquote>The funny story I have related with this dish happened a couple of years ago when I invited my  European friends for a Russian dinner at my place. Without a doubt "Herring under a fur coat" was one of the numerous dishes on the table. As we sat down and I started serving the dishes, I recommended to start with this cold salad. My friends replied that they would like to start with salty food first and keep dessert for later. You must have seen their shock when I explained to them that "Herring under a fur coat" is actually a cold salty salad and hardly can be called a dessert. No one could believe it until they actually tried it. It was the first dish that was over within a few minutes of us starting the dinner. In the end everyone chose to call it a "Fish cake" emphasizing its sweet-looking nature.</blockquote>
-    <blockquote>Although every Russian family has its own recipe and truly believes that their recipe is the best, my mother's variation of it has been repeatedly appreciated by our friends and relatives, and deserves to be shared.</blockquote></p>
+    The funny story I have related with this dish happened a couple of years ago when I invited my  European friends for a Russian dinner at my place. Without a doubt "Herring under a fur coat" was one of the numerous dishes on the table. As we sat down and I started serving the dishes, I recommended to start with this cold salad. My friends replied that they would like to start with salty food first and keep dessert for later. You must have seen their shock when I explained to them that "Herring under a fur coat" is actually a cold salty salad and hardly can be called a dessert. No one could believe it until they actually tried it. It was the first dish that was over within a few minutes of us starting the dinner. In the end everyone chose to call it a "Fish cake" emphasizing its sweet-looking nature.
+    Although every Russian family has its own recipe and truly believes that their recipe is the best, my mother's variation of it has been repeatedly appreciated by our friends and relatives, and deserves to be shared.</p>
   </li>
   <li>
-    <img src="images/dennis.jpg" />
-    <h3>Frankfurt, Germany</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <a href="marta-recipe.html" class="imglink"><img src="images/marta.jpg" class="img-responsive"/></a>
+    <h3>Madrid, Spain</h3>
+    <p>“Crema Catalana” is a Spanish dessert originally from the region of Catalonia. Following the tradition my grandmother always cooks it on 19th March, Saint Joseph day, when the whole family will gather around the table with the spoons ready to break the sugar crust and enjoy the cinnamon aroma and the soft texture of the custard that hides under it. No doubt, there will be some debate about who gets the pot with the cinnamon branch or the lemon zest in it. The younger ones will even try to eat it as fast as possible, hide the pot and trick grandma into giving them another one. As any traditional dish, there is not an official, universal recipe but a million of versions of it, this is my grandmother’s one. I hope you enjoy it as much as I do.</p>
+  </li>
+  <li>
+    <a href="christophe-recipe.html" class="imglink"><img src="images/christophe.jpg" class="img-responsive"/></a>
+    <h3>Compiègne, France</h3>
+    <p>I like Flammkuchen because it's super delicious and very traditional for my region. Whenever I have visitors from abroad, I like to cook this dish so they can experience a truly local meal.</p>
   </li>
   </ul>
 </div>
-
+</body>
